@@ -15,3 +15,11 @@ GET /products: Fetch all products for a specific user, with optional filters.
 Data Storage:
 PostgreSQL for storing users and products, including processed image data.
 
+System Architecture
+The system follows a modular architecture with the following modules:
+API Module: Handles all HTTP requests.
+Database Module: Manages PostgreSQL interactions.
+Message Queue Module: Interfaces with RabbitMQ.
+Image Processing Microservice: Handles asynchronous image compression tasks.
+Caching Module: Integrates with Redis for caching
+
